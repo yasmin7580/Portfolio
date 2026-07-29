@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 const skillCategories = [
@@ -72,31 +71,31 @@ export default function Skills() {
 
 
                     {
-                        skillCategories.map((category,index)=>(
+                        skillCategories.map((category, index) => (
 
                             <motion.div
 
-                            key={category.title}
+                                key={category.title}
 
-                            initial={{
-                                opacity:0,
-                                y:50
-                            }}
+                                initial={{
+                                    opacity: 0,
+                                    y: 50
+                                }}
 
-                            whileInView={{
-                                opacity:1,
-                                y:0
-                            }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0
+                                }}
 
-                            viewport={{
-                                once:true
-                            }}
+                                viewport={{
+                                    once: true
+                                }}
 
-                            transition={{
-                                delay:index*.2
-                            }}
+                                transition={{
+                                    delay: index * .2
+                                }}
 
-                            className="
+                                className="
                             rounded-3xl
                             border border-white/10
                             bg-[#0b0b0b]
@@ -108,34 +107,34 @@ export default function Skills() {
                             >
 
 
-                            <h3 className="
+                                <h3 className="
                             text-2xl
                             font-bold
                             text-cyan-400
                             mb-8
                             ">
-                                {category.title}
-                            </h3>
+                                    {category.title}
+                                </h3>
 
 
 
-                            <div className="grid grid-cols-2 gap-5">
+                                <div className="grid grid-cols-2 gap-5">
 
 
-                            {
-                                category.skills.map(skill=>(
+                                    {
+                                        category.skills.map(skill => (
 
 
-                                    <motion.div
+                                            <motion.div
 
-                                    whileHover={{
-                                        scale:1.05,
-                                        y:-5
-                                    }}
+                                                whileHover={{
+                                                    scale: 1.05,
+                                                    y: -5
+                                                }}
 
-                                    key={skill.name}
+                                                key={skill.name}
 
-                                    className="
+                                                className="
                                     flex
                                     flex-col
                                     items-center
@@ -150,36 +149,34 @@ export default function Skills() {
                                     transition
                                     "
 
-                                    >
+                                            >
 
 
-                                    <img
-                                    src={skill.logo}
-                                    alt={skill.name}
-                                    className="
+                                                <img
+                                                    src={skill.logo}
+                                                    alt={skill.name}
+                                                    className="
                                     w-12
                                     h-12
                                     object-contain
                                     "
-                                    />
+                                                />
 
 
-                                    <p className="text-sm text-gray-300 text-center">
-                                        {skill.name}
-                                    </p>
+                                                <p className="text-sm text-gray-300 text-center">
+                                                    {skill.name}
+                                                </p>
 
 
-                                  
+
+                                            </motion.div>
 
 
-                                    </motion.div>
+                                        ))
+                                    }
 
 
-                                ))
-                            }
-
-
-                            </div>
+                                </div>
 
 
                             </motion.div>
