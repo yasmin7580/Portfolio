@@ -194,12 +194,12 @@ export default function Hero() {
                         <div className="absolute h-full w-full animate-pulse rounded-full border-2 border-cyan-400/20" />
 
                         <Image
-                            src="/profile.png"
+                            src="/profile1.png"
                             alt="Jerin Khondokar"
                             width={380}
                             height={380}
                             priority
-                            className="h-[300px] w-[300px] rounded-full object-cover sm:h-[380px] sm:w-[380px] animate-[float_5s_ease-in-out_infinite]"
+                            className="h-[300px] w-[300px] rounded-full object-cover object-top sm:h-[380px] sm:w-[380px] animate-[float_5s_ease-in-out_infinite]"
                         />
 
                     </div>

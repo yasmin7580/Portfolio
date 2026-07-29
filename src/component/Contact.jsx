@@ -76,7 +76,7 @@ export default function Contact() {
                         <InfoCard
                             icon={<Phone size={22} />}
                             title="Phone"
-                            value="+880 1688-132207"
+                            value="+880 1798-252233"
                         />
 
                         <InfoCard
