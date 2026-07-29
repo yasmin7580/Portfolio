@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import projects from "@/data/projects";
@@ -8,7 +7,6 @@ import ProjectDrawer from "./ProjectDrawer";
 export default function Projects() {
     const [selectedProject, setSelectedProject] =
         useState(null);
-
     return (
         <section
             id="projects"
