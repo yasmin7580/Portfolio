@@ -122,7 +122,6 @@ export default function Contact() {
                         transition={{ duration: .5 }}
                         className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl"
                     >
-
                         <div className="space-y-5">
 
                             <input
