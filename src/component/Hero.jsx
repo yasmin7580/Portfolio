@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 import {
     ArrowRight,
     Download,
-    Github,
-    Linkedin,
     Mail,
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
