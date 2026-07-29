@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
-
 const education = [
   {
     degree: "B.A. (Honours) in Economics",
@@ -119,7 +118,6 @@ export default function Education() {
                 </div>
               </motion.div>
             ))}
-
           </div>
         </div>
       </div>
