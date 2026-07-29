@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Jerin Khondokar.web.app",
   icons: {
     icon: "/profile1.png",
   },

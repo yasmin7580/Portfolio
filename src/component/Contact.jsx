@@ -10,6 +10,7 @@ import {
     Send,
     Briefcase,
 } from "lucide-react";
+import toast, { Toaster } from "react-hot-toast";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 
@@ -25,11 +26,11 @@ export default function Contact() {
                 process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
             );
 
-            alert("Email sent successfully!");
+           toast.success("Email sent successfully!");
             e.target.reset();
         } catch (error) {
             console.error(error);
-            alert("Failed to send email.");
+           toast.error("Failed to send email!");
         }
     };
 
@@ -38,6 +39,7 @@ export default function Contact() {
             id="contact"
             className="relative overflow-hidden bg-black py-28"
         >
+            <Toaster/>
             {/* Background Glow */}
             <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-cyan-500/10 blur-[140px]" />
             <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
